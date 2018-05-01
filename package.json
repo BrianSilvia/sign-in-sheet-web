@@ -5,6 +5,8 @@
   "author": "Brian Silvia <Brian.M.Silvia@gmail.com>",
   "private": true,
   "scripts": {
+    "docker-build": "docker build -t sign-in-sheet-web .",
+    "docker-start": "docker run -p 8081:8081 -d sign-in-sheet-web",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
